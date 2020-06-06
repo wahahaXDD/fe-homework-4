@@ -198,7 +198,9 @@
     .logo{
       display: block;
       margin: 0 auto;
-      width: 48px;
+      img{
+        width: 48px;
+      }
     }
     .navbar{
       position: absolute;

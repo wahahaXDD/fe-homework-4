@@ -12,11 +12,11 @@
 <body>
   <header class="header">
     <nav>
-      <a href="./index.html" class="ham-icon">
+      <a href="#" class="ham-icon">
         <i class="fas fa-bars"></i>
       </a>
-      <a href="./index.html">
-        <img src="./assets/images/logo 1.png" alt="" class="logo">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo 1.png" alt="">
       </a>
       <ul class="navbar">
         <li class="nav"><a href="#">系列鏡框</a></li>
@@ -102,7 +102,6 @@
 
   <script>
     document.getElementsByClassName("ham-icon")[0].addEventListener("click", function(e){
-      console.log("here")
       e.preventDefault();
       document.getElementsByClassName("navbar")[0].classList.toggle("active");
     })

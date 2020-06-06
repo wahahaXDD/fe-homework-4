@@ -251,6 +251,8 @@ blockquote, q {
   .header .logo {
     display: block;
     margin: 0 auto;
+  }
+  .header .logo img {
     width: 48px;
   }
   .header .navbar {
