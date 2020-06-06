@@ -1,0 +1,255 @@
+*{
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 25px 0;
+  background-color: #AA0601;
+  .ham-icon{
+    display: none;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav{
+    display: inline-block;
+    text-align: center;
+    a{
+      text-decoration: none;
+      color: #ffffff;
+      line-height: 28px;
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+.footer{
+  background-color: #AA0601;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  .top{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex: 3 70%;
+  }
+  .footer-nav{
+    width: 40%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    flex: 1 15%;
+  }
+  .icon{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .facebook{
+    background-image: url("../../images/facebook.svg");
+  }
+  .ig{
+    background-image: url("../../images/ig.svg");
+  }
+  .line{
+    background-image: url("../../images/line.svg");
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    flex: 1 51%;
+    span{
+      font-size: 36px;
+      line-height: 48px;
+      color: #ffffff;
+    }
+    .phone-img{
+      margin-right: 23px;
+    }
+    .email-img{
+      margin-right: 12px;
+    }
+  }
+  hr{
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .bottom{
+    display: flex;
+    align-items: center;
+  }
+  .logo a{
+    background-image: url("../../images/logo 1.png");
+    display: block;
+    width: 80px;
+    height: 48px;
+    margin-right: 38px;
+  }
+  .copyright{
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 21px;
+    flex-grow: 2;
+  }
+  .privacy, .service{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .service{
+    margin-left: 5%;
+  }
+}
+
+
+@media (max-width:768px){
+  .container{
+    max-width: 672px;
+  }
+
+  .header .navbar{
+      width: 65%;
+  }
+
+  .footer{
+    padding-top: 24px;
+    .footer-nav{
+      width: 60%;
+      height: 24px;
+    }
+    .icon{
+      width: 24px;
+      height: 24px;
+    }
+    .contact{
+      margin-bottom: 18px;
+      span{
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .phone-img{
+        width: 23px;
+        height: 23px;
+        margin-right: 12px;
+      }
+      .email-img{
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+      }
+    }
+    .logo{
+      display: none;
+    }
+  }
+}
+
+@media (max-width:375px){
+  .container{
+    width: 351px;
+  }
+
+  .header{
+    padding: 10px 0;
+    .ham-icon{
+      display: block;
+      position: absolute;
+      color: #ffffff;
+      font-size: 24px;
+    }
+    .logo{
+      display: block;
+      margin: 0 auto;
+      width: 48px;
+    }
+    .navbar{
+      position: absolute;
+      left: 0;
+      top: 40px;
+      width: 100%;
+      max-height: 0px;
+      transition: all 0.8s;
+      overflow: hidden;
+      z-index: 120;
+      flex-direction: column;
+      &.active{
+        max-height: 250px;
+      }
+    }
+    .nav{
+      display: block;
+      background: #AA0601;
+      border-bottom: 1px solid #FFFFFF;
+      padding: 16px 0;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .footer{
+    nav{
+      display: none;
+    }
+    .icons{
+      width: 50%;
+      order: 2;
+    }
+    .phone{
+      order:1;
+    }
+    .email{
+      order:3;
+    }
+    .bottom{
+      flex-wrap: wrap;
+      *{
+        margin-bottom: 10px;
+      }
+    }
+    .privacy{
+      width: 100%;
+    }
+    .service{
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
