@@ -306,7 +306,7 @@ blockquote, q {
 .index {
   color: #650300;
 }
-.index .banner {
+.index .index-banner {
   height: 840px;
   background-image: url("../../images/index_banner.png");
   background-size: cover;
@@ -640,10 +640,10 @@ section h3 {
 .banner {
   height: 304px;
   background-image: url("../../images/banner_2x.png");
-  background-position-x: 80%;
-  background-position-y: 50%;
+  background-position-y: 55%;
   background-repeat: no-repeat;
   margin-bottom: 88px;
+  background-size: cover;
 }
 .banner .container {
   display: flex;
